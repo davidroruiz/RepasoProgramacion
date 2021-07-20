@@ -1,18 +1,18 @@
 function numerosPares(arrayNumeros: number[]) {
-    let nPares: number[] = [];
+
     let index: number = 0;
     let isPar = false;
     while (index < arrayNumeros.length && isPar == false) {
         if (arrayNumeros[index] % 2 == 0) {
 
-            nPares.push(arrayNumeros[index])
             isPar = true;
         } else {
+            isPar = false;
             index++;
         }
     }
 
-    return nPares + " es par";
+    return isPar;
 }
 
 function nameM(arrayName = []) {
@@ -32,7 +32,7 @@ function nameM(arrayName = []) {
     }
     return booleanoNumber;
 }
-
+console.log("Numero Par");
 console.log(numerosPares([1, 2, 3, 4, 5]));
+console.log("2 nombres que empiezen por M");
 console.log(nameM(["Manolo", "Ma"]));
-
