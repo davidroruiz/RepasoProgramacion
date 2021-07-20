@@ -1,12 +1,13 @@
 export class Mobile{
-    public name:string
-    public model:string
-    public trademark:string
-    public sdSize:number
-    public color:string
-    public is5G:boolean
-    public cameraNumber:number
-    public priece:number
+    private name: string
+    private model: string
+    private trademark: string
+    private sdSize: number
+    private color: string
+    private is5G: boolean
+    private cameraNumber: number
+    private priece: number
+ 
 
     constructor(name:string, model:string, trademark:string, sdSize:number, 
         color:string, is5G:boolean, cameraNumber:number, priece:number){
@@ -22,13 +23,69 @@ export class Mobile{
     }
 
     printMobile(mobile:Mobile){
-        console.log("Name del Mobile: " + this.name);
-        console.log("Model del Mobile: " + this.model);
-        console.log("Trademark del Mobile: " + this.trademark);
-        console.log("SdSize del Mobile: " + this.sdSize);
-        console.log("Color del Mobile: " + this.color);
-        console.log("is5G del Mobile: " + this.is5G);
-        console.log("CameraNumber del Mobile: " + this.cameraNumber);
-        console.log("Priece del Mobile: " + this.priece + "\n");
+        let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
+        + "Name: " + this.name + "\n"
+        + "Model: " + this.model + "\n"
+        + "Trademark: " + this.trademark + "\n"
+        + "SD Size (GB): " + this.sdSize + "\n"
+        + "Color: " + this.color + "\n"
+        + "Is 5G?: " + this.is5G + "\n"
+        + "CameraNumber: " + this.cameraNumber + "\n"
+        + "Priece: " + this.priece + "\n");
+
+        return stringMostraPantalla;
     }
+
+    public get_name(): string {
+        return this.name
+    }
+    public set_name(value: string) {
+        this.name = value
+    }
+
+    public get_model(): string {
+        return this.model
+    }
+    public set_model(value: string) {
+        this.model = value
+    }
+
+    public get_trademark(): string {
+        return this.trademark
+    }
+    public set_trademark(value: string) {
+        this.trademark = value
+    }
+    public get_sdSize(): number {
+        return this.sdSize
+    }
+    public set_sdSize(value: number) {
+        this.sdSize = value
+    }
+    public get_color(): string {
+        return this.color
+    }
+    public set_color(value: string) {
+        this.color = value
+    }
+    public get_is5G(): boolean {
+        return this.is5G
+    }
+    public set_is5G(value: boolean) {
+        this.is5G = value
+    }
+    public get_cameraNumber(): number {
+        return this.cameraNumber
+    }
+    public set_cameraNumber(value: number) {
+        this.cameraNumber = value
+    }
+    public get_priece(): number {
+        return this.priece
+    }
+    public set_priece(value: number) {
+        this.priece = value
+    }
+
+
 }
