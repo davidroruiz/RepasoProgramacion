@@ -22,7 +22,7 @@ export class Mobile{
             this.priece = priece;
     }
 
-    printMobile(mobile:Mobile){
+    printMobile(){
         let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
         + "Name: " + this.name + "\n"
         + "Model: " + this.model + "\n"

@@ -12,7 +12,7 @@ mobile = [mobile1, mobile2, mobile3];
 
 function printAllObjectMobile() {
     for (let index = 0; index < mobile.length; index++) {
-        console.log(mobile[index].printMobile(mobile[index]));
+        console.log(mobile[index].printMobile());
 
     }
 
