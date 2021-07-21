@@ -22,27 +22,12 @@ export class Mobile{
             this.priece = priece;
     }
 
-    printMobile(){
-        let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
-        + "Name: " + this.name + "\n"
-        + "Model: " + this.model + "\n"
-        + "Trademark: " + this.trademark + "\n"
-        + "SD Size (GB): " + this.sdSize + "\n"
-        + "Color: " + this.color + "\n"
-        + "Is 5G?: " + this.is5G + "\n"
-        + "CameraNumber: " + this.cameraNumber + "\n"
-        + "Priece: " + this.priece + "\n");
-
-        return stringMostraPantalla;
-    }
-
     public get_name(): string {
         return this.name
     }
     public set_name(value: string) {
         this.name = value
     }
-
     public get_model(): string {
         return this.model
     }
@@ -86,6 +71,22 @@ export class Mobile{
     public set_priece(value: number) {
         this.priece = value
     }
+
+    public printMobile(){
+        let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
+        + "Name: " + this.name + "\n"
+        + "Model: " + this.model + "\n"
+        + "Trademark: " + this.trademark + "\n"
+        + "SD Size (GB): " + this.sdSize + "\n"
+        + "Color: " + this.color + "\n"
+        + "Is 5G?: " + this.is5G + "\n"
+        + "CameraNumber: " + this.cameraNumber + "\n"
+        + "Priece: " + this.priece + "\n");
+
+        return stringMostraPantalla;
+    }
+
+    
 
 
 }
