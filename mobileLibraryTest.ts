@@ -10,4 +10,3 @@ arraryMobile = [mobile1,mobile2,mobile3,mobile4];
 const mobileLibrary = new MobileLibrary("Don Lapiz","Spain",arraryMobile);
 
 mobileLibrary.printLibrary();
-//console.log("Suma de todos los precios \n" + mobileLibrary.totalPriceCalculation());

@@ -7,7 +7,6 @@ export class Mobile{
     private is5G: boolean
     private cameraNumber: number
     private priece: number
- 
 
     constructor(name:string, model:string, trademark:string, sdSize:number, 
         color:string, is5G:boolean, cameraNumber:number, priece:number){
@@ -20,20 +19,6 @@ export class Mobile{
             this.is5G = is5G;
             this.cameraNumber = cameraNumber;
             this.priece = priece;
-    }
-
-    printMobile(){
-        let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
-        + "Name: " + this.name + "\n"
-        + "Model: " + this.model + "\n"
-        + "Trademark: " + this.trademark + "\n"
-        + "SD Size (GB): " + this.sdSize + "\n"
-        + "Color: " + this.color + "\n"
-        + "Is 5G?: " + this.is5G + "\n"
-        + "CameraNumber: " + this.cameraNumber + "\n"
-        + "Priece: " + this.priece + "\n");
-
-        return stringMostraPantalla;
     }
 
     public get_name(): string {
@@ -85,6 +70,20 @@ export class Mobile{
     }
     public set_priece(value: number) {
         this.priece = value
+    }
+
+    public printMobile(){
+        let stringMostraPantalla:string=("The characteristics of the mobile name are: \n"
+        + "Name: " + this.name + "\n"
+        + "Model: " + this.model + "\n"
+        + "Trademark: " + this.trademark + "\n"
+        + "SD Size (GB): " + this.sdSize + "\n"
+        + "Color: " + this.color + "\n"
+        + "Is 5G?: " + this.is5G + "\n"
+        + "CameraNumber: " + this.cameraNumber + "\n"
+        + "Priece: " + this.priece + "\n");
+
+        return stringMostraPantalla;
     }
 
 

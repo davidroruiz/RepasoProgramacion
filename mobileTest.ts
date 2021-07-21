@@ -6,9 +6,9 @@ const mobile3 = new Mobile("Samsung Galaxy 10","Galaxy 10","nokia",32,"white",tr
 mobile1.set_is5G(true);
 mobile1.set_cameraNumber(4);
 console.log("Nokia");
-console.log(mobile1.printMobile(mobile1));
+console.log(mobile1.printMobile());
 console.log("Iphone");
-console.log(mobile2.printMobile(mobile2));
+console.log(mobile2.printMobile());
 console.log("Samsung");
-console.log(mobile3.printMobile(mobile3));
+console.log(mobile3.printMobile());
 
