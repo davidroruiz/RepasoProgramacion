@@ -35,7 +35,7 @@ export class Punto {
 
     public calcularDistancia(otroPunto: Punto): number {
 
-        let distance = Math.sqrt((Math.pow(this.get_x() - this.get_y(), 2)) + (Math.pow(otroPunto.get_x() - otroPunto.get_y(), 2)));
+        let distance = Math.sqrt((Math.pow(this.get_x() - otroPunto.get_x(), 2)) + (Math.pow(this.get_y() - otroPunto.get_y(), 2)));
         return distance;
     }
 
@@ -58,13 +58,15 @@ export class Punto {
     public calcularMasCercano(puntos:Punto[]):Punto{
 
         let cercanoAlPunto:Punto;
-        let result:number=this.calcularDistancia(puntos[0]);
+        let result:number = this.calcularDistancia(puntos[0]);
             for (let index = 0; index < puntos.length ; index++) {
                 
                   if(this.calcularDistancia(puntos[index]) < result){
                     cercanoAlPunto=puntos[index];
                     result=this.calcularDistancia(puntos[index]);
+                    
                   }
+
             }
         return cercanoAlPunto;
     }
